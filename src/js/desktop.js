@@ -38,4 +38,12 @@ jQuery.noConflict();
       }
     }
   };
+
+  // 例：編集完了時のイベント
+  kintone.events.on('app.record.edit.submit.success', async (event) => {
+    // 送信完了時の処理
+    // event.url = `/k/${event.appId}/show#record=${event.recordId}`;
+    return event;
+  });
+
 })(jQuery, kintone.$PLUGIN_ID);
