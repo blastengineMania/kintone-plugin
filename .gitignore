@@ -1,0 +1,4 @@
+private.ppk
+dist
+*.ppk
+node_modules
